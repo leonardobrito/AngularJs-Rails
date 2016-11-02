@@ -43,3 +43,6 @@ gem 'angular-rails-templates'
 
 # Para funcionar o respond_to no application
 gem "responders"
+
+# Csrf
+gem "angular_rails_csrf"

@@ -2,9 +2,6 @@ angular.module('flapperNews')
 .controller('MainCtrl', [
     '$scope', 'posts',
     function($scope, posts) {
-        console.log("mainCtrl");
-        console.log(posts.posts);
-        $scope.teste = "Hellow";
         $scope.posts = posts.posts;
 
         // Add Post na lista

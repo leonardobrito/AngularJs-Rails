@@ -9,9 +9,9 @@ angular.module('flapperNews', ['ui.router', 'templates'])
             templateUrl: 'home/_home.html',
             controller: 'MainCtrl',
             resolve: {
-                // postPromise: ['posts', function(posts){
-                //     return posts.getAll();
-                // }]
+                postPromise: ['posts', function(posts){
+                    return posts.getAll();
+                }]
             }           
         })
 

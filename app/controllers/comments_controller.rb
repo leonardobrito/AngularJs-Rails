@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  before_filter :authenticate_user!, only: [:create, :upvote]
+
   def create
     post = Post.find(params[:post_id])
     comment = post.comments.create(comment_params)
@@ -15,6 +17,6 @@ class CommentsController < ApplicationController
 
   private
   def comment_params
-    params.require(:comment).permit(:body, :author)
+    params.require(:comment).permit(:body)
   end
 end

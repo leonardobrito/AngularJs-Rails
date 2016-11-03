@@ -46,3 +46,11 @@ gem "responders"
 
 # Csrf
 gem "angular_rails_csrf"
+
+# Login
+gem 'devise'
+
+# To get AngularDevise via Rails Assets
+source "https://rails-assets.org" do
+  gem "rails-assets-angular-devise"
+end
